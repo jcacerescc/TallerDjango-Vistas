@@ -21,6 +21,9 @@ def variables_view(request):
         variable_dto = vl.create_variable(json.loads(request.body))
         variable = serializers.serialize('json', [variable_dto,])
         return HttpResponse(variable, 'application/json')
+    if request.method == 'DELETE':
+        vl.delete_variable(json.loads(request.body))
+        return HttpResponse("Deleted", 'application/json')
 
 @csrf_exempt
 def variable_view(request, pk):
@@ -31,5 +34,12 @@ def variable_view(request, pk):
 
     if request.method == 'PUT':
         variable_dto = vl.update_variable(pk, json.loads(request.body))
+        variable = serializers.serialize('json', [variable_dto,])
+        return HttpResponse(variable, 'application/json')
+    if request.method == 'DELETE':
+        vl.delete_variable(pk)
+        return HttpResponse("Deleted", 'application/json')
+    if request.method == 'PATCH':
+        variable_dto = vl.patch_variable(pk, json.loads(request.body))
         variable = serializers.serialize('json', [variable_dto,])
         return HttpResponse(variable, 'application/json')
