@@ -3,7 +3,7 @@ from ..models import Variable
 def get_variables():
     variables = Variable.objects.all()
     return variables
-
+    
 def get_variable(var_pk):
     variable = Variable.objects.get(pk=var_pk)
     return variable
