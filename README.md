@@ -11,21 +11,26 @@ En esta prueba se esta creando una nueva instancia de measurement. Para ello se 
 
 ![alt text](https://github.com/jcacerescc/TallerDjango-Vistas/blob/master/post_measurement.png)
 
-**pipenv:** can be installed wih:
+* Prueba 2 - Get Measurment by id
 
-```bash
-pip install pipenv
-```
+En esta prueba se obtiene un "measurement", dado un id por parámetro. En este caso, para este ejemplo, se devuelve el measurement asociado al id 26.
 
-dont forget to check if you have the right python version: 3.8
+![alt text](https://github.com/jcacerescc/TallerDjango-Vistas/blob/master/getMeasurementById.png)
 
-* Executing with pipenv 
-```bash
-pipenv run python {command}
-```
-Example:
-```bash
-pipenv run python manage.py makemigrations 
-```
+* Prueba 3 - Get all Measurment
 
-![alt text](https://github.com/jcacerescc/TallerDjango-Vistas/blob/master/post_measurement.png)
+En esta consulta se devuelven todos los measurements que han sido creados, con toda su información asociada.
+
+![alt text](https://github.com/jcacerescc/TallerDjango-Vistas/blob/master/getAllMeasurement.png)
+
+* Prueba 4 - Put Measurment
+
+Con esta prueba, dado un id, se modifica un atributo de un measurement, de modo que se pueda actualizar. En este caso se modificó el atributo "value".
+
+![alt text](https://github.com/jcacerescc/TallerDjango-Vistas/blob/master/putMeasurement.png)
+
+* Prueba 5 - Delete Measurment
+
+En esta prueba, dado un id por parámetro, se elimina de la base de datos el measurement asociado a ese id. En este caso se eliminó el measurement asociado al id 26.
+
+![alt text](https://github.com/jcacerescc/TallerDjango-Vistas/blob/master/DeleteMeasurement.png)
