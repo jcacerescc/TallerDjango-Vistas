@@ -18,3 +18,5 @@ Example:
 ```bash
 pipenv run python manage.py makemigrations 
 ```
+
+![alt text](https://github.com/jcacerescc/TallerDjango-Vistas/blob/master/post_measurement.png)
