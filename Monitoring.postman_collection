@@ -1,7 +1,7 @@
 {
 	"info": {
-		"_postman_id": "414cbad6-b797-4c44-8a6b-e111fef51bac",
-		"name": "Monitoring Copy",
+		"_postman_id": "7ac1c914-bea3-4460-aa0f-1555d55b3030",
+		"name": "Monitoring Copy 3",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
 		"_exporter_id": "17282760"
 	},
@@ -486,20 +486,14 @@
 				"method": "DELETE",
 				"header": [],
 				"url": {
-					"raw": "{{host}}:{{port}}{{api_path}}/measurements/?id=14",
+					"raw": "{{host}}:{{port}}{{api_path}}/measurements/14",
 					"host": [
 						"{{host}}"
 					],
 					"port": "{{port}}{{api_path}}",
 					"path": [
 						"measurements",
-						""
-					],
-					"query": [
-						{
-							"key": "id",
-							"value": "14"
-						}
+						"14"
 					]
 				}
 			},
